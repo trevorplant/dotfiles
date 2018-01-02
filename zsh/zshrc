@@ -75,8 +75,6 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-export PACT_BROKER_PASSWORD=x0WpvnN3DyGeZ43XBADMGZ4NQckjFkW
-export PACT_BROKER_USER=HFzJIUqDLqJB5s8H70leFwQj2li6fO2I
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -90,6 +88,10 @@ alias gw=./gradlew $1
 alias ts=tig status
 alias ivo=intel-virtual-output
 
-. /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
-
 eval $(thefuck --alias)
+
+# Powerline shell changes
+if [ -d "$HOME/.local/bin" ] ; then PATH="$HOME/.local/bin:$PATH"; fi
+
+# Powerline shell changes
+if [ -f ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ]; then source ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh; fi

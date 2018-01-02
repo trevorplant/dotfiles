@@ -10,6 +10,7 @@ Plug 'mxw/vim-jsx'
 Plug 'w0rp/ale'
 Plug 'elixir-lang/vim-elixir'
 Plug 'thinca/vim-ref'
+Plug 'vim-airline/vim-airline'
 Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
 " call PlugInstall to install new plugins
 call plug#end()
@@ -54,6 +55,9 @@ nnoremap <C-H> <C-W><C-H>
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 
 " plugin settings
+
+" airline
+let g:airline_powerline_fonts = 1
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
