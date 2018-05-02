@@ -92,9 +92,9 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 let g:jsx_ext_required = 0
 
 " ale prettier-eslint
-"let g:ale_fixers = {
-"\   'javascript': ['prettier_eslint'],
-"\}
-"let g:ale_fix_on_save = 1
-"let g:ale_javascript_prettier_eslint_executable = 'prettier-eslint'
-"let g:ale_javascript_prettier_eslint_use_global = 1
+let g:ale_fixers = {
+\   'javascript': ['prettier_eslint'],
+\}
+let g:ale_fix_on_save = 1
+let g:ale_javascript_prettier_eslint_executable = 'prettier-eslint'
+let g:ale_javascript_prettier_eslint_use_global = 1
