@@ -1,4 +1,6 @@
 call plug#begin('~/.config/nvim/bundle')
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
