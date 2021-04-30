@@ -99,3 +99,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+alias gw=./gradlew $1
+alias tis=tig status
+alias vi="nvim"
+alias vim="nvim"
+export editor="nvim"
+alias zrc="vim ~/.zshrc"
+alias zrcs="source ~/.zshrc"
+
